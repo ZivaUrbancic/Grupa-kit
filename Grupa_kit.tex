@@ -68,45 +68,45 @@
 
 Teorija kit je močno povezana s teorijo vozlov, a je zanimiva in pomembna tudi kot samostojna raziskovalna smer. Kite je prvi definiral avstrijski matematik Emil Artin v svojem članku \emph{"Theorie der Z\''{o}pfe"}, ki je bil objavljen leta $1925$. Glavni izrek članka reši problem klasifikacije kit, a z njegovim dokazom ni bil zadovoljen. Opisal ga je kot "neprepričljivega" in ga nato v članku iz leta 1947 z naslovom \emph{"Theory of braids"} zapisal na način, ki prepriča tudi najbolj rigorozne in skeptične bralce. Tako je teorijo pravzaprav postavil na njene temelje. Leta raziskovanja so prinesla tudi nekatere ekvivalentne definicije, ki so jih matematiki prilagodili potrebam preučevanja in uporabe v drugih matematičnih smereh. Uporablja se recimo v mehaniki fluidov, statistični mehaniki, nekomutativni kriptografiji in pri reševanju polinomskih enačb.???
 
-\section{Prosta grupa in upodobitve}
-
-To poglavje je namenjeno razlagi algebraične teorije, ki jo bomo potrebovali za nadaljne raziskovanje. Vpeljali bomo pojme, ki jih potrebujemo, da lahko definiramo, kaj je upodobitev in jo kasneje tudi poiščemo.\\
-Naj bo $X = \{ x_1,\ x_2,\ \ldots,\ x_n \}$ neka množica (lahko je tudi neskončna). Imenujmo jo \emph{abeceda}, posamezen element pa imenujmo \emph{črka}. Definirajmo množico $S$ kot množico vseh besed, ki jih lahko sestavimo iz črk abecede $X$.
-
-\begin{trditev}
-Množica $S$ je za operacijo stikanja besed ($x \circ y = xy, \ x, y \in X$) polgrupa.
-\end{trditev}
-
-\begin{dokaz}
-Operacija je očitno asociativna.
-\end{dokaz}
-
-\begin{opomba}
-Polgrupo $(S, \circ)$ imenujemo \emph{prosta polgrupa}.
-\end{opomba}
-
-\begin{opomba}
-Če množici $S$ dodamo še prazno besedo, postane za operacijo stikanja monoid.
-\end{opomba}
-
-Vprašanje, kaj $S$ (z dodano prazno besedo) manjka do grupe, nas motivira k definiciji množice $X^{-1} = \{x_1^{-1},\ x_2^{-1}, \ \ldots, \ x_n^{-1}\}$. Nova abeceda naj bo $A = X \cup X^{-1}$. Množica besed nad $A$ pa še ni, kar iščemo, saj v besedah ne želimo podbesed oblike $x_ix_i^{-1}$.
-
-\begin{definicija}
-Beseda nad $A$ je \emph{reducirana}, če ne vsebuje podbesede oblike $xx^{-1}$ ali $x^{-1}x$, kjer je $x\in A$.
-\end{definicija}
-
-Označimo z $F_x$ množico vseh reduciranih besed nad $A$. Na njej definirajmo operacijo $\circ$, ki stakne besedi in ju zapiše v reducirani obliki (tj. pokrajša neželene podbesede).
+%\section{Prosta grupa in upodobitve}
+%
+%To poglavje je namenjeno razlagi algebraične teorije, ki jo bomo potrebovali za nadaljne raziskovanje. Vpeljali bomo pojme, ki jih potrebujemo, da lahko definiramo, kaj je upodobitev in jo kasneje tudi poiščemo.\\
+%Naj bo $X = \{ x_1,\ x_2,\ \ldots,\ x_n \}$ neka množica (lahko je tudi neskončna). Imenujmo jo \emph{abeceda}, posamezen element pa imenujmo \emph{črka}. Definirajmo množico $S$ kot množico vseh besed, ki jih lahko sestavimo iz črk abecede $X$.
+%
+%\begin{trditev}
+%Množica $S$ je za operacijo stikanja besed ($x \circ y = xy, \ x, y \in X$) polgrupa.
+%\end{trditev}
+%
+%\begin{dokaz}
+%Operacija je očitno asociativna.
+%\end{dokaz}
+%
+%\begin{opomba}
+%Polgrupo $(S, \circ)$ imenujemo \emph{prosta polgrupa}.
+%\end{opomba}
+%
+%\begin{opomba}
+%Če množici $S$ dodamo še prazno besedo, postane za operacijo stikanja monoid.
+%\end{opomba}
+%
+%Vprašanje, kaj $S$ (z dodano prazno besedo) manjka do grupe, nas motivira k definiciji množice $X^{-1} = \{x_1^{-1},\ x_2^{-1}, \ \ldots, \ x_n^{-1}\}$. Nova abeceda naj bo $A = X \cup X^{-1}$. Množica besed nad $A$ pa še ni, kar iščemo, saj v besedah ne želimo podbesed oblike $x_ix_i^{-1}$.
+%
+%\begin{definicija}
+%Beseda nad $A$ je \emph{reducirana}, če ne vsebuje podbesede oblike $xx^{-1}$ ali $x^{-1}x$, kjer je $x\in A$.
+%\end{definicija}
+%
+%Označimo z $F_x$ množico vseh reduciranih besed nad $A$. Na njej definirajmo operacijo $\circ$, ki stakne besedi in ju zapiše v reducirani obliki (tj. pokrajša neželene podbesede).
 
 \section{Grupa kit}
 
 \subsection{Definicija grupe kit}
 
-Kot je bilo omenjeno v uvodu, lahko grupo kit definiramo na različne (ekvivalentne) načine, kakor najbolj ustreza našemu raziskovanju. V tem razdelku bomo podali (algebraično in) geometrijsko definicijo kite (nekatere druge bralec lahko najde v [?] in [?]) in se prepričali, da množica kit, če na njej definiramo operacijo stikanja, res postane grupa. Pri tem bomo morali obravnavati tudi, kdaj sta kiti ekvivalentni, pri čemer bomo sledili [?] in [?].\\
+Kot je bilo omenjeno v uvodu, lahko grupo kit definiramo na različne (ekvivalentne) načine, kakor najbolj ustreza našemu raziskovanju. V tem razdelku bomo podali (algebraično in) geometrijsko definicijo kite (nekatere druge bralec lahko najde v \cite{Manturov}) in se prepričali, da množica kit, če na njej definiramo operacijo stikanja, res postane grupa. Pri tem bomo morali obravnavati tudi, kdaj sta kiti ekvivalentni, pri čemer bomo sledili \cite{Burde} in \cite{Manturov}.\\
 Kite si lahko zelo lahko predstavljamo kot skupek pramenov, ki so prepleteni med seboj. To je zgolj opis, za podrobnejše preučevanje potrebujemo bolj formalno in matematično korektno razlago. To nas napelje k zapisu geometrijske definicije kite.\\
 Imejmo premici $\{y = z = 0\}$ ter $\{y = 0, z = 1\}$ v $\R^3$. Na vsaki izmed premic izberemo $m$ točk z abscisami $x=1,\ 2,\ \ldots,\ m$.
 
 \begin{definicija}
-\emph{Kita z m prameni} je množica $m$ disjunktnih gladkih poti, ki povezujejo točke s prve izbrane premice s tistimi z druge (v poljubnem vrstnem redu). Projekcija posamezne poti na ravnino $z$ mora biti difeomorfizem - imenujemo ga \emph{pramen} kite.
+\emph{Kita z m prameni} je množica $m$ disjunktnih gladkih poti - imenujemo jih \emph{prameni}, ki povezujejo točke s prve izbrane premice s tistimi z druge (v poljubnem vrstnem redu). Projekcija posameznega pramena na os $z$ mora biti difeomorfizem.
 \end{definicija}
 
 \begin{figure}[h!]
@@ -114,11 +114,25 @@ Imejmo premici $\{y = z = 0\}$ ter $\{y = 0, z = 1\}$ v $\R^3$. Na vsaki izmed p
 \caption{Primer kite s 5 prameni.}
 \end{figure}
 
+\begin{opomba}
+Zahteva, da je projekcija vsakega od pramenov na $z$ os difeomorfizem, v resnici pomeni, da prameni monotono padajo (če izberemo parametrizacijo kot v definiciji, tj. od točk na $\{y = 0, z = 1\}$ do tistih na $\{y = z = 0\}$) oziroma, da nobeden ne zavije navzgor, kot je prikazano na spodnji sliki.
+\end{opomba}
+
+\begin{figure}[h!]
+\includegraphics[height = 5cm]{ne-kita}
+\caption{Projekcija pramena, ki se začne v $A'$ in konča v $A$, na os $z$ ni difeomorfizem.}
+\end{figure}
+
 %\begin{definicija}
 %Kiti $B_0$ in $B_1$ sta \emph{ekvivalentni}, če sta si izotopni.
 %\end{definicija}
 
-Imejmo kiti $B_0$ in $B_1$. Z $\gamma_i$ označimo pramen $B_0$, ki se konča v $(0, 0, i)$, in z $\theta_i$ pramen $B_1$, ki se začne v $(i, 0, 1)$.
+Imejmo kiti $B_0$ in $B_1$ z $n$ prameni. Z $\gamma_i$ označimo pramen $B_0$, ki se začne v $(i, 0, 1)$, konča pa se v $(j, 0, 0)$, kjer je $j$ poljuben element $\{1, \ldots, n\}$. S $\theta_i$ označimo pramen $B_1$, ki se začne v $(j, 0, 1)$. Iz $B_0$ in $B_1$ lahko dobimo novo kito tako, da staknemo $\gamma_i$ in $\theta_i$ za vsak $i=1, \ldots, n$.
+
+\begin{figure}[h!]
+\includegraphics[height = 8cm]{Stikanje_2}
+\caption{Stik pramenov $\gamma_2$ in $\theta_2$ in kita, ki jo dobimo s stikom vseh pramenov $B_0$ in $B_1$.}
+\end{figure}
 
 ...............................................................................................................\\
 
@@ -155,8 +169,9 @@ Zgornji relaciji imenujemo \emph{Artinovi relaciji}.
 
 % seznam uporabljene literature
 \begin{thebibliography}{99}
-
-%\bibitem{}
+\bibitem{Burde}{G. Burde, H. Zieschang. {\em Knots}, 2nd ed. Walter de Gruyter, Berlin, 2003.}
+\bibitem{Manturov}{V. O. Manturov. {\em Knot Theory}, 1st ed. CRC Press, 2004. Dostopno na \url{http://varf.ru/rudn/manturov/book.pdf}.}
+\bibitem{Wiki_braid_theory}{\emph{Braid theory}, v: Wkipedia: The Free Encyclopedia, [ogled 11. 11. 2016], dostopno na \url{https://en.wikipedia.org/wiki/Braid_theory}.}
 
 \end{thebibliography}
 
