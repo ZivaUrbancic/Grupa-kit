@@ -66,7 +66,7 @@
 
 \section{Uvod}
 
-Teorija kit je močno povezana s teorijo vozlov, a je zanimiva in pomembna tudi kot samostojna raziskovalna smer. Kite je prvi definiral avstrijski matematik Emil Artin v svojem članku \emph{"Theorie der Z\''{o}pfe"}, ki je bil objavljen leta $1925$. Glavni izrek članka reši problem klasifikacije kit, a z njegovim dokazom ni bil zadovoljen. Opisal ga je kot "neprepričljivega" in ga nato v članku iz leta 1947 z naslovom \emph{"Theory of braids"} zapisal na način, ki prepriča tudi najbolj rigorozne in skeptične bralce. Tako je teorijo pravzaprav postavil na njene temelje. Leta raziskovanja so prinesla tudi nekatere ekvivalentne definicije, ki so jih matematiki prilagodili potrebam preučevanja in uporabe v drugih matematičnih smereh. Uporablja se recimo v mehaniki fluidov, statistični mehaniki, nekomutativni kriptografiji in pri reševanju polinomskih enačb.???
+Teorija kit je močno povezana s teorijo vozlov, a je zanimiva in pomembna tudi kot samostojna raziskovalna smer. Kite je prvi definiral avstrijski matematik Emil Artin v svojem članku \emph{``Theorie der Z\''{o}pfe''}, ki je bil objavljen leta $1925$. Glavni izrek članka reši problem klasifikacije kit, a z njegovim dokazom ni bil zadovoljen. Opisal ga je kot ``neprepričljivega'' in ga nato v članku z naslovom \emph{``Theory of braids''}(1947) zapisal na način, ki prepriča tudi najbolj rigorozne in skeptične bralce. Tako je teorijo pravzaprav postavil na njene temelje. Leta raziskovanja so prinesla tudi nekatere ekvivalentne definicije, ki so jih matematiki prilagodili potrebam preučevanja in uporabe v drugih matematičnih in z matematiko povezanih smereh. Uporablja se recimo v mehaniki fluidov, statistični mehaniki, nekomutativni kriptografiji in pri reševanju polinomskih enačb.???
 
 %\section{Prosta grupa in upodobitve}
 %
@@ -103,13 +103,13 @@ Teorija kit je močno povezana s teorijo vozlov, a je zanimiva in pomembna tudi 
 
 Kot je bilo omenjeno v uvodu, lahko grupo kit definiramo na različne (ekvivalentne) načine, kakor najbolj ustreza našemu raziskovanju. V tem razdelku bomo podali (algebraično in) geometrijsko definicijo kite (nekatere druge bralec lahko najde v \cite{Manturov}) in se prepričali, da množica kit, če na njej definiramo operacijo stikanja, res postane grupa. Pri tem bomo morali obravnavati tudi, kdaj sta kiti ekvivalentni, pri čemer bomo sledili \cite{Burde} in \cite{Manturov}.\\
 Kite si lahko zelo lahko predstavljamo kot skupek pramenov, ki so prepleteni med seboj. To je zgolj opis, za podrobnejše preučevanje potrebujemo bolj formalno in matematično korektno razlago. To nas napelje k zapisu geometrijske definicije kite.\\
-Imejmo premici $\{y = z = 0\}$ ter $\{y = 0, z = 1\}$ v $\R^3$. Na vsaki izmed premic izberemo $m$ točk z abscisami $x=1,\ 2,\ \ldots,\ m$.
+Na vsaki izmed premic $\{y = z = 0\}$ ter $\{y = 0, z = 1\}$, ki sta vloženi v $\R^3$, izberemo $m$ točk z abscisami $x=1,\ 2,\ \ldots,\ m$.
 
 \begin{definicija}
 \emph{Kita z m prameni} je množica $m$ disjunktnih gladkih poti - imenujemo jih \emph{prameni}, ki povezujejo točke s prve izbrane premice s tistimi z druge (v poljubnem vrstnem redu). Projekcija posameznega pramena na os $z$ mora biti difeomorfizem.
 \end{definicija}
 
-\begin{figure}[h!]
+\begin{figure}[ht!]
 \includegraphics[height = 5cm]{Primer_kite_1}
 \caption{Primer kite s 5 prameni.}
 \end{figure}
@@ -118,25 +118,76 @@ Imejmo premici $\{y = z = 0\}$ ter $\{y = 0, z = 1\}$ v $\R^3$. Na vsaki izmed p
 Zahteva, da je projekcija vsakega od pramenov na $z$ os difeomorfizem, v resnici pomeni, da prameni monotono padajo (če izberemo parametrizacijo kot v definiciji, tj. od točk na $\{y = 0, z = 1\}$ do tistih na $\{y = z = 0\}$) oziroma, da nobeden ne zavije navzgor, kot je prikazano na spodnji sliki.
 \end{opomba}
 
-\begin{figure}[h!]
+\begin{figure}[ht!]
 \includegraphics[height = 5cm]{ne-kita}
 \caption{Projekcija pramena, ki se začne v $A'$ in konča v $A$, na os $z$ ni difeomorfizem.}
 \end{figure}
 
-%\begin{definicija}
-%Kiti $B_0$ in $B_1$ sta \emph{ekvivalentni}, če sta si izotopni.
-%\end{definicija}
+\begin{primer}
+Oglejmo si enostaven primer kit $B_0$ in $B_1$ s spodnje slike.
 
-Imejmo kiti $B_0$ in $B_1$ z $n$ prameni. Z $\gamma_i$ označimo pramen $B_0$, ki se začne v $(i, 0, 1)$, konča pa se v $(j, 0, 0)$, kjer je $j$ poljuben element $\{1, \ldots, n\}$. S $\theta_i$ označimo pramen $B_1$, ki se začne v $(j, 0, 1)$. Iz $B_0$ in $B_1$ lahko dobimo novo kito tako, da staknemo $\gamma_i$ in $\theta_i$ za vsak $i=1, \ldots, n$.
+\begin{figure}[ht!]
+\includegraphics[height = 4cm]{Primer_3}
+\caption{Kiti $B_0$ in $B_1$.}
+\end{figure}
+Zelo enostavno je videti, da prvo kito lahko ``odpletemo'' v drugo, ne da bi kakšen pramen pretrgali ali da bi spreminjali njegovo začetno ali končno točko. Sklepamo, da sta na nek način sorodni.
+\end{primer}
 
-\begin{figure}[h!]
-\includegraphics[height = 8cm]{Stikanje_2}
+Povsem naravno vprašanje, ki se ob obravnavanju zgornjega primera pojavi, je: ``katere premike lahko naredimo, da se ohrani sorodnost?''\\
+\\
+Izotopija\\
+
+%--------------------------------------------------------------------------------
+\begin{definicija}
+Kiti $B_0$ in $B_1$ sta \emph{ekvivalentni}, če sta \emph{izotopni}.
+\end{definicija}
+
+\begin{opomba}
+Enostavneje zgornja definicija pove, da eno vložitev kite lahko zvezno deformiramo v drugo.
+\end{opomba}
+
+%\begin{opomba}
+%Od sedaj naprej, bomo izraz izraz\˝ kita \˝ uporabljali za ekvivalenčni razred kit.
+%\end{opomba}
+%--------------------------------------------------------------------------------
+
+Naj bosta $B_0$ in $B_1$ kiti z $n$ prameni. Z $\gamma_i$ označimo pramen $B_0$, ki se začne v $(i, 0, 1)$, konča pa se v $(j, 0, 0)$, kjer je $j$ poljuben element $\{1, \ldots, n\}$. S $\theta_i$ označimo pramen $B_1$, ki se začne v $(j, 0, 1)$. Iz $B_0$ in $B_1$ lahko dobimo novo kito tako, da staknemo $\gamma_i$ in $\theta_i$ za vsak $i=1, \ldots, n$.  Označimo jo z $B_0*B_1$.
+
+\begin{figure}[ht!]
+\includegraphics[height = 7cm]{Stikanje_2}
 \caption{Stik pramenov $\gamma_2$ in $\theta_2$ in kita, ki jo dobimo s stikom vseh pramenov $B_0$ in $B_1$.}
 \end{figure}
 
-...............................................................................................................\\
+%Operacija stikanja je DD.
 
-Povsem jasno je, da lahko vsako kito zapišemo kot produkt večih \emph{elementarnih kit}
+\begin{trditev}
+Množica ekvivalenčnih razredov kit z $n$ prameni je za operacijo stikanja grupa.
+\end{trditev}
+
+\begin{dokaz}
+Najprej moramo preveriti, da je operacija sploh dobro definirana, nato pa še, da množica ekvivalenčnih razredov z operacijo stikanja zadosti kriterijem za grupo.
+\begin{itemize}
+\item{Oglejmo si kite $A_0$, $A_1$, $B_0$ in $B_1$, za katere velja: $$A_0 \cong A_1 \ \text{in} \ B_0 \cong B_1.$$ Pokazati želimo, da sta kiti $A_0*B_0$ in $A_1*A_2$ ekvivalentni. }
+\item{Stikanje je očitno asociativna operacija.}
+\item{Enota}
+\item{Inverz}
+\end{itemize}
+\end{dokaz}
+
+\begin{figure}[ht!]
+\includegraphics[height=4cm]{Inverz_1}
+\caption{Inverzni element in enota.}
+\end{figure}
+
+
+\subsection{Lastnosti grupe kit}
+
+
+\section{Upodobitve grupe kit}
+
+\subsection{Artinove relacije}
+
+Delo z ekvivalenčnimi razredi je lahko zamudno in težavno, zato si kite poskušamo predstavljati drugače. O kitah lahko razmišljamo kot o zaporedju menjav. 
 
 \begin{definicija}
 \emph{Grupo kit z $m$ prameni} podamo z $(m - 1)$ generatorji $\sigma_1,\ \ldots ,\ \sigma_{m - 1}$, za katere veljata relaciji: $$ \sigma_i \sigma_j = \sigma_j \sigma_i $$ za vsaka $i$ in $j$, za katera je $|i - j| \geq 2$ in $$\sigma_i \sigma_{i+1} \sigma_i = \sigma_{i+1} \sigma_i \sigma_{i+1}$$ za vsak $i = 1,\ 2,\ \ldots,\ m-2$.
@@ -145,13 +196,6 @@ Povsem jasno je, da lahko vsako kito zapišemo kot produkt večih \emph{elementa
 \begin{opomba}
 Zgornji relaciji imenujemo \emph{Artinovi relaciji}.
 \end{opomba}
-
-\subsection{Lastnosti grupe kit}
-
-
-\section{Upodobitve grupe kit}
-
-\subsection{Artinove relacije}
 
 \subsection{Buraujeva upodobitev}
 
@@ -163,8 +207,20 @@ Zgornji relaciji imenujemo \emph{Artinovi relaciji}.
 
 \section*{Slovar strokovnih izrazov}
 
-\geslo{Živa}{Najboljša v vsem ever.}
-\geslo{}{}
+%\geslo{Živa}{Najboljša v vsem ever.}
+\geslo{Pramen}{}
+\geslo{Difeomorfizem}{}
+\geslo{Kita}{}
+\geslo{(Gladka) pot}{}
+\geslo{Grupa}{}
+\geslo{Izotopnost}{}
+\geslo{Ekvivalenčna relacija}{}
+\geslo{Ekvivalenčni razred}{}
+\geslo{Generatorji grupe}{}
+\geslo{Artinove relacije}{}
+
+
+
 
 
 % seznam uporabljene literature
