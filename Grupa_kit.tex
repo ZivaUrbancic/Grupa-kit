@@ -66,7 +66,7 @@
 
 \section{Uvod}
 
-Teorija kit je močno povezana s teorijo vozlov, a je zanimiva in pomembna tudi kot samostojna raziskovalna smer. Kite je prvi definiral avstrijski matematik Emil Artin v svojem članku \emph{``Theorie der Z\''{o}pfe''}, ki je bil objavljen leta $1925$. Glavni izrek članka reši problem klasifikacije kit, a z njegovim dokazom ni bil zadovoljen. Opisal ga je kot ``neprepričljivega'' in ga nato v članku z naslovom \emph{``Theory of braids''}(1947) zapisal na način, ki prepriča tudi najbolj rigorozne in skeptične bralce. Tako je teorijo pravzaprav postavil na njene temelje. Leta raziskovanja so prinesla tudi nekatere ekvivalentne definicije, ki so jih matematiki prilagodili potrebam preučevanja in uporabe v drugih matematičnih in z matematiko povezanih smereh. Uporablja se recimo v mehaniki fluidov, statistični mehaniki, nekomutativni kriptografiji in pri reševanju polinomskih enačb.???
+Teorija kit je močno povezana s teorijo vozlov, a je zanimiva in pomembna tudi kot samostojna raziskovalna smer. Kite je prvi definiral avstrijski matematik Emil Artin v svojem članku \emph{``Theorie der Z\''{o}pfe''}, ki je bil objavljen leta $1925$. Glavni izrek članka reši problem klasifikacije kit, a z njegovim dokazom Artin ni bil zadovoljen. Opisal ga je kot ``neprepričljivega'' in ga nato v članku z naslovom \emph{``Theory of braids''}(1947) zapisal na način, ki prepriča tudi najbolj rigorozne in skeptične bralce. Tako je teorijo pravzaprav postavil na njene temelje. Leta raziskovanja so prinesla tudi nekatere ekvivalentne definicije, ki so jih matematiki prilagodili potrebam preučevanja in uporabe v drugih matematičnih in z matematiko povezanih smereh. Uporablja se recimo v mehaniki fluidov, statistični mehaniki, nekomutativni kriptografiji, \ldots
 
 %\section{Prosta grupa in upodobitve}
 %
@@ -96,13 +96,13 @@ Teorija kit je močno povezana s teorijo vozlov, a je zanimiva in pomembna tudi 
 %\end{definicija}
 %
 %Označimo z $F_x$ množico vseh reduciranih besed nad $A$. Na njej definirajmo operacijo $\circ$, ki stakne besedi in ju zapiše v reducirani obliki (tj. pokrajša neželene podbesede).
-
+\break
 \section{Grupa kit}
 
 \subsection{Definicija grupe kit}
 
-Kot je bilo omenjeno v uvodu, lahko grupo kit definiramo na različne (ekvivalentne) načine, kakor najbolj ustreza našemu raziskovanju. V tem razdelku bomo podali (algebraično in) geometrijsko definicijo kite (nekatere druge bralec lahko najde v \cite{Manturov}) in se prepričali, da množica kit, če na njej definiramo operacijo stikanja, res postane grupa. Pri tem bomo morali obravnavati tudi, kdaj sta kiti ekvivalentni, pri čemer bomo sledili \cite{Burde} in \cite{Manturov}.\\
-Kite si lahko zelo lahko predstavljamo kot skupek pramenov, ki so prepleteni med seboj. To je zgolj opis, za podrobnejše preučevanje potrebujemo bolj formalno in matematično korektno razlago. To nas napelje k zapisu geometrijske definicije kite.\\
+Kot je bilo omenjeno v uvodu, lahko grupo kit definiramo na različne (ekvivalentne) načine, kakor najbolj ustreza našemu raziskovanju. V tem razdelku bomo podali geometrijsko definicijo kite (nekatere druge bralec lahko najde v \cite{Manturov}) in se prepričali, da množica kit, če na njej definiramo operacijo stikanja, res postane grupa. Pri tem bomo morali obravnavati tudi, kdaj sta kiti ekvivalentni, pri čemer bomo sledili \cite{Burde} in \cite{Manturov}.\\
+Kite si lahko zelo naravno predstavljamo kot skupek pramenov, ki so prepleteni med seboj. To je zgolj opis, za podrobnejše preučevanje potrebujemo bolj formalno in matematično korektno definicijo.\\
 Na vsaki izmed premic $\{y = z = 0\}$ ter $\{y = 0, z = 1\}$, ki sta vloženi v $\R^3$, izberemo $m$ točk z abscisami $x=1,\ 2,\ \ldots,\ m$.
 
 \begin{definicija}
@@ -115,29 +115,62 @@ Na vsaki izmed premic $\{y = z = 0\}$ ter $\{y = 0, z = 1\}$, ki sta vloženi v 
 \end{figure}
 
 \begin{opomba}
-Zahteva, da je projekcija vsakega od pramenov na $z$ os difeomorfizem, v resnici pomeni, da prameni monotono padajo (če izberemo parametrizacijo kot v definiciji, tj. od točk na $\{y = 0, z = 1\}$ do tistih na $\{y = z = 0\}$) oziroma, da nobeden ne zavije navzgor, kot je prikazano na spodnji sliki.
+Zahteva, da je projekcija vsakega od pramenov na $z$ os difeomorfizem, v resnici pomeni, da prameni monotono padajo (če izberemo parametrizacijo kot v definiciji, tj. od točk na $\{y = 0, z = 1\}$ do tistih na $\{y = z = 0\}$). Enostavneje, nobeden izmed pramenov ne zavije navzgor, kot je prikazano na spodnji sliki.
 \end{opomba}
 
-\begin{figure}[ht!]
-\includegraphics[height = 5cm]{ne-kita}
+\begin{figure}[h!]
+\includegraphics[height = 4.3cm]{ne-kita}
 \caption{Projekcija pramena, ki se začne v $A'$ in konča v $A$, na os $z$ ni difeomorfizem.}
 \end{figure}
 
 \begin{primer}
-Oglejmo si enostaven primer kit $B_0$ in $B_1$ s spodnje slike.
+Oglejmo si enostaven primer kit $B_0$ in $B_1$ s spodnje slike. Zelo enostavno je videti, da prvo kito lahko ``odpletemo'' v drugo, ne da bi kakšen pramen pretrgali ali da bi spreminjali njegovo začetno ali končno točko. Sklepamo, da sta na nek način sorodni.
+\end{primer}
 
-\begin{figure}[ht!]
+\begin{figure}[h!]
 \includegraphics[height = 4cm]{Primer_3}
 \caption{Kiti $B_0$ in $B_1$.}
 \end{figure}
-Zelo enostavno je videti, da prvo kito lahko ``odpletemo'' v drugo, ne da bi kakšen pramen pretrgali ali da bi spreminjali njegovo začetno ali končno točko. Sklepamo, da sta na nek način sorodni.
+
+Naravno vprašanje, ki sledi zgornjemu primeru je, katere kite so si sorodne oziroma kako lahko deformiramo kito, da se ohranijo njene lastnosti? Da lahko na to vprašanje odgovorimo, vpeljimo nekaj topoloških pojmov.
+
+\begin{definicija}
+Vložitvi $f_0,f_1: X \rightarrow Y$ sta \emph{izotopni}, če obstaja taka vložitev $F: X \times I \rightarrow Y\times I$, da je
+$$F(x, t)=(f(x,t), t),$$ kjer je $x \in X$, $t \in I$, $f(x,0)=f_0(x)$ in $f(x,1)=f_1(x)$. Tako vložitev F imenujemo \emph{level-preserving izotopija}.
+\end{definicija}
+
+\begin{opomba}
+Definicija bolj enostavno povedano pomeni, da vložitvi $f_0$ in $f_1$ lahko povežemo z vložitvami.
+\end{opomba}
+
+\begin{opomba}
+Zaradi enostavnosti zapisa namesto $f(x,t)$ pišemo $f_t(x)$.
+\end{opomba}
+
+Izotopija zvezno ``premika'' $f_0$ k $f_1$, a ne pazi na to, kaj se dogaja v ciljnem prostoru v bližini slike vložitve. Zakaj to predstavlja problem, si oglejmo na naslednjem primeru.
+
+\begin{figure}[h!]
+\includegraphics[height = 4cm]{Primer_2}
+\caption{Kita $B_0$, vmesni korak in kita $B_1$.}
+\end{figure}
+
+\begin{primer}
+Oglejmo si kiti $B_0$ in $B_1$ z zgornje slike. Jasno je, da moramo, če želimo eno zvezno preoblikovati v drugo, prekiniti pramen ali ga ``odlepiti'' od ene od fiksnih premic z začetnimi in končnimi točkami. A med njima obstaja izotopija, ki pramena tako približa, da se obe menjavi kite $B_0$ vršita v isti točki, kar prikazuje vmesni korak na zgornji sliki.
 \end{primer}
 
-Povsem naravno vprašanje, ki se ob obravnavanju zgornjega primera pojavi, je: ``katere premike lahko naredimo, da se ohrani sorodnost?''\\
-\\
-Izotopija\\
+Očitno je, da izotopnosti ne moremo vzeti za definicijo ekvivalence kit. Če želimo, da se bodo ohranjali prepleti, ki jih ne moremo razplesti, brez da bi pretrgali pramene, mora namreč preslikava nositi tudi nekaj informacij o ciljnem prostoru.
 
-%--------------------------------------------------------------------------------
+\begin{definicija}
+Vložitvi $f_0,f_1: X \rightarrow Y$ sta \emph{ambientno izotopni}, če obstaja level-preserving izotopija $H: Y \times I \rightarrow Y\times I$, da je
+$$H(y,t)=(h_t(y),t),$$ kjer je $f_1=h_1 \circ f_0$ in $h_0=id_y$. Preslikavo $H$ imenujemo \emph{ambientna izotopija}.
+\end{definicija}
+
+\begin{opomba}
+Namesto, da bi preoblikovali vložitev, sedaj preoblikujemo cel prostor. Preoblikovanje vložitve je posledica preoblikovanja ciljnega prostora.
+\end{opomba}
+%S tem smo definirali izotopijo $F$, ki povezuje $f_0$ in $f_1$, kot $F(x,t)=H(h_t \circ f_0(x), t)$.
+
+
 \begin{definicija}
 Kiti $B_0$ in $B_1$ sta \emph{ekvivalentni}, če sta \emph{izotopni}.
 \end{definicija}
