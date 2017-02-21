@@ -8,6 +8,7 @@
 % aktivirajte pakete, ki jih potrebujete
 % \usepackage{tikz}
 \usepackage{graphicx}
+\usepackage{amsmath}
 
 % za številske množice uporabite naslednje simbole
 \newcommand{\R}{\mathbb R}
@@ -170,19 +171,23 @@ Namesto, da bi preoblikovali vložitev, sedaj preoblikujemo cel prostor. Preobli
 \end{opomba}
 %S tem smo definirali izotopijo $F$, ki povezuje $f_0$ in $f_1$, kot $F(x,t)=H(h_t \circ f_0(x), t)$.
 
-
 \begin{definicija}
-Kiti $B_0$ in $B_1$ sta \emph{ekvivalentni}, če sta \emph{izotopni}.
+Kiti $B_0$ in $B_1$ sta \emph{ekvivalentni}, če sta ambientno izotopni.
 \end{definicija}
 
 \begin{opomba}
-Enostavneje zgornja definicija pove, da eno vložitev kite lahko zvezno deformiramo v drugo.
+Hiter razmislek pokaže, da je ambientna izotopija ekvivalenčna relacija. Refleksivnost in simetričnost sta očitni, zato utemeljimo le, da velja tranzitivnost. Naj bo $H_1: \R^3 \rightarrow \R^3$ ambientna izotopija, ki $B_0$ preslika v $B_1$, in $H_2: \R^3 \rightarrow \R^3$ ambientna izotopija, ki $B_1$ preslika v $B_2$. Potem je $H: \R^3 \rightarrow \R^3$ s predpisom
+\[ H(y,t) = \begin{cases} 
+      H_1(y,2t)  &  0 \leq t \leq \frac{1}{2} \\
+      H_2(y,2t-1) & \frac{1}{2}\leq t \leq 1 
+   \end{cases}
+\]
+ambientna izotopija, ki $B_0$ preslika v $B_2$.
 \end{opomba}
 
-%\begin{opomba}
-%Od sedaj naprej, bomo izraz izraz\˝ kita \˝ uporabljali za ekvivalenčni razred kit.
-%\end{opomba}
-%--------------------------------------------------------------------------------
+\begin{opomba}
+Izraz ``kita'' bomo včasih uporabljali za ekvivalenčni razred kit. Posamezno kito tako obravnavamo kot predstavnika svojega ekvivalenčnega razreda.
+\end{opomba}
 
 Naj bosta $B_0$ in $B_1$ kiti z $n$ prameni. Z $\gamma_i$ označimo pramen $B_0$, ki se začne v $(i, 0, 1)$, konča pa se v $(j, 0, 0)$, kjer je $j$ poljuben element $\{1, \ldots, n\}$. S $\theta_i$ označimo pramen $B_1$, ki se začne v $(j, 0, 1)$. Iz $B_0$ in $B_1$ lahko dobimo novo kito tako, da staknemo $\gamma_i$ in $\theta_i$ za vsak $i=1, \ldots, n$.  Označimo jo z $B_0*B_1$.
 
@@ -191,7 +196,7 @@ Naj bosta $B_0$ in $B_1$ kiti z $n$ prameni. Z $\gamma_i$ označimo pramen $B_0$
 \caption{Stik pramenov $\gamma_2$ in $\theta_2$ in kita, ki jo dobimo s stikom vseh pramenov $B_0$ in $B_1$.}
 \end{figure}
 
-%Operacija stikanja je DD.
+Na množico ekvivalenčnih razredov kit z $n$ prameni torej lahko vpeljemo operacijo stikanja. Kakšno strukturo s tem množica pridobi, povzema naslednja trditev.
 
 \begin{trditev}
 Množica ekvivalenčnih razredov kit z $n$ prameni je za operacijo stikanja grupa.
